@@ -1,0 +1,148 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["Hi", "Hey", "Is anyone there?", "Hello", "Hay"],
+        "responses": ["Hello", "Hi", "Hi there"]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye"],
+        "responses": ["See you later", "Have a nice day", "Bye! Come back again"]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+      },
+      {
+        "tag": "about",
+        "patterns": ["Who are you?", "What are you?", "Who you are?"],
+        "responses": ["I'm Joana, your bot assistant", "I'm Joana, a master's university recommendation bot"]
+      },
+      {
+        "tag": "recommendation",
+        "patterns": ["Recommend me a master's university", "I want to do master's abroad", "Recommend me some master's universities"],
+        "responses": ["Please provide us your details in order to assist you", "Please mention your field of study, and we will help you find a master's university"]
+      },
+      {
+        "tag": "field",
+        "patterns": ["My field of study is computer science", "My field of study is EEE", "My field of study is CSE", "My major is economics", "Master's field is business administration"],
+        "responses": ["Tell me, please, your academic results and your preferred location for pursuing the degree", "Tell me your CGPA, IELTS, TOEFL scores, and preferred location to assist you", "First, tell me about your results and field of interest"]
+      },
+      
+      {
+        "tag": "ielts_score",
+        "patterns": ["my IELTS score is 7.5", "IELTS score is 8", "my IELTS band is 6.5", "my IELTS result is 7.0", "IELTS score is 7.5"],
+        "responses": ["Great! Now, please provide your TOEFL and GRE scores as well"]
+      },
+      {
+        "tag": "toefl_score",
+        "patterns": ["my TOEFL score is 100", "TOEFL score is 110", "my TOEFL result is 95", "TOEFL score is 105", "my TOEFL iBT is 90"],
+        "responses": ["Perfect! Now, please provide your Gre score and preferred location for pursuing the degree"]
+      },
+      {
+        "tag": "gre_score",
+        "patterns": ["my GRE score is 320", "GRE score is 330", "my GRE result is 310", "GRE score is 325", "my GRE percentile is 90"],
+        "responses": ["Excellent! Now, please provide your CGPA and preferred location for pursuing the degree"]
+      },
+      {
+        "tag": "cgpa",
+        "patterns": ["My CGPA is 3.5", "CGPA is 3", "My CGPA is 3.8", "My CGPA is 3.75", "CGPA is 3.14", "My result is 3.40", "CGPA is 2.7", "CGPA is 3.9", "CGPA 3.30", "CGPA is 3.10", "CGPA is 3.28"],
+        "responses": ["Tell me, please,  your preferred location for pursuing the degree", "Tell me your preferred location to assist you", "fine! First, tell me about your  field of interest"]
+      },
+      {
+        "tag": "recommendation_flow",
+        "patterns": ["my preferred location is {} and my field of study is {}", "I want to study {} in {}", "I am interested in {} and prefer to study in {}"],
+        "responses": ["Based on your preferences of {}, we recommend the following universities: University A, University B, University C", "Considering your interest in {} and preferred location {}, the following universities might be suitable for you: University X, University Y, University Z"]
+      }
+    ],
+    "recommendations": [
+      {
+        "tag": "computer_science",
+        "universities": [
+          {
+            "name": "University of California, Berkeley",
+            "location": "United States"
+          },
+          {
+            "name": "Stanford University",
+            "location": "United States"
+          },
+          {
+            "name": "Massachusetts Institute of Technology (MIT)",
+            "location": "United States"
+          }
+        ]
+      },
+      {
+        "tag": "business_administration",
+        "universities": [
+          {
+            "name": "Harvard Business School",
+            "location": "United States"
+          },
+          {
+            "name": "London Business School",
+            "location": "United Kingdom"
+          },
+          {
+            "name": "INSEAD",
+            "location": "France"
+          }
+        ]
+      },
+      {
+        "tag": "engineering",
+        "universities": [
+          {
+            "name": "California Institute of Technology (Caltech)",
+            "location": "United States"
+          },
+          {
+            "name": "ETH Zurich - Swiss Federal Institute of Technology",
+            "location": "Switzerland"
+          },
+          {
+            "name": "University of Cambridge",
+            "location": "United Kingdom"
+          }
+        ]
+      },
+      {
+        "tag": "psychology",
+        "universities": [
+          {
+            "name": "University of Oxford",
+            "location": "United Kingdom"
+          },
+          {
+            "name": "University of Toronto",
+            "location": "Canada"
+          },
+          {
+            "name": "University of Melbourne",
+            "location": "Australia"
+          }
+        ]
+      },
+      {
+        "tag": "mechanical_engineering",
+        "universities": [
+          {
+            "name": "Delft University of Technology",
+            "location": "Netherlands"
+          },
+          {
+            "name": "National University of Singapore (NUS)",
+            "location": "Singapore"
+          },
+          {
+            "name": "Imperial College London",
+            "location": "United Kingdom"
+          }
+        ]
+      }
+    ]
+  }
+  
